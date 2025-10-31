@@ -2,10 +2,20 @@ import portraitImage from "@/assets/doctor-portrait.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left: Large Typography */}
-        <div className="space-y-6">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Full Background Portrait */}
+      <div className="absolute inset-0 right-0 lg:left-1/2">
+        <img 
+          src={portraitImage} 
+          alt="Dr. Mohammed Fahed VP" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 lg:via-background/30 to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 py-20">
+        <div className="max-w-2xl space-y-6">
           <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none">
             <span className="block text-muted-foreground/40 font-light">DR.</span>
             <span className="block">MOHAMMED</span>
@@ -15,23 +25,12 @@ const Hero = () => {
               FAHED VP
             </span>
           </div>
-        </div>
-
-        {/* Right: Portrait + Description */}
-        <div className="space-y-8">
-          <div className="aspect-square rounded-2xl overflow-hidden">
-            <img 
-              src={portraitImage} 
-              alt="Dr. Mohammed Fahed VP" 
-              className="w-full h-full object-cover"
-            />
-          </div>
           
-          <div className="space-y-4 text-right">
+          <div className="space-y-4 text-right pt-8">
             <p className="text-xl md:text-2xl font-light text-foreground">
               Pediatrician & Racing Champion
             </p>
-            <p className="text-sm md:text-base text-muted-foreground font-light max-w-md ml-auto">
+            <p className="text-sm md:text-base text-muted-foreground font-light">
               2024 RFC India Champion
             </p>
           </div>
