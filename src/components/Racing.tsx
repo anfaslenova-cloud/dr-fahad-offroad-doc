@@ -7,11 +7,11 @@ const Racing = () => {
       <div className="max-w-4xl mx-auto space-y-12">
         <h2 className="text-5xl md:text-6xl font-bold">Racing Achievements</h2>
         
-        <div className="aspect-video rounded-2xl overflow-hidden">
+        <div className="aspect-video rounded-2xl overflow-hidden group cursor-pointer">
           <img 
             src={championshipImage} 
             alt="Championship Victory" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
         </div>
 
@@ -27,19 +27,19 @@ const Racing = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div>
+            <div className="hover:-translate-y-2 transition-transform duration-300">
               <div className="text-3xl font-bold">2,165</div>
               <div className="text-sm text-muted-foreground font-light">Points</div>
             </div>
-            <div>
+            <div className="hover:-translate-y-2 transition-transform duration-300">
               <div className="text-3xl font-bold">26</div>
               <div className="text-sm text-muted-foreground font-light">Stages</div>
             </div>
-            <div>
+            <div className="hover:-translate-y-2 transition-transform duration-300">
               <div className="text-3xl font-bold">5</div>
               <div className="text-sm text-muted-foreground font-light">Days</div>
             </div>
-            <div>
+            <div className="hover:-translate-y-2 transition-transform duration-300">
               <div className="text-3xl font-bold">CJ500</div>
               <div className="text-sm text-muted-foreground font-light">Colossus</div>
             </div>

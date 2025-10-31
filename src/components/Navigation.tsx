@@ -9,19 +9,19 @@ const Navigation = () => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => scrollToSection('about')}
-            className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 transition-colors text-sm font-light"
+            className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-300 text-sm font-light hover:scale-105"
           >
             About
           </button>
           <button
             onClick={() => scrollToSection('medical')}
-            className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 transition-colors text-sm font-light"
+            className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-300 text-sm font-light hover:scale-105"
           >
             Medical
           </button>
           <button
             onClick={() => scrollToSection('racing')}
-            className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 transition-colors text-sm font-light"
+            className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-300 text-sm font-light hover:scale-105"
           >
             Racing
           </button>
@@ -29,7 +29,7 @@ const Navigation = () => {
 
         <button
           onClick={() => scrollToSection('contact')}
-          className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 transition-colors text-sm font-light"
+          className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-300 text-sm font-light hover:scale-105"
         >
           Contact
         </button>

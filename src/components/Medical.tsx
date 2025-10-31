@@ -7,8 +7,8 @@ const Medical = () => {
         <h2 className="text-5xl md:text-6xl font-bold">Medical Practice</h2>
         
         <div className="space-y-8">
-          <div className="flex items-start gap-4">
-            <Stethoscope className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+          <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
+            <Stethoscope className="w-6 h-6 text-foreground mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
             <div className="space-y-2">
               <h3 className="text-xl font-semibold">Pediatrician</h3>
               <p className="text-muted-foreground font-light">
@@ -17,8 +17,8 @@ const Medical = () => {
             </div>
           </div>
 
-          <div className="flex items-start gap-4">
-            <MapPin className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+          <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
+            <MapPin className="w-6 h-6 text-foreground mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
             <div className="space-y-2">
               <h3 className="text-xl font-semibold">Soothee Sparsh Clinic</h3>
               <p className="text-muted-foreground font-light">
@@ -27,8 +27,8 @@ const Medical = () => {
             </div>
           </div>
 
-          <div className="flex items-start gap-4">
-            <Heart className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+          <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
+            <Heart className="w-6 h-6 text-foreground mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
             <div className="space-y-2">
               <h3 className="text-xl font-semibold">Community Care</h3>
               <p className="text-muted-foreground font-light">
