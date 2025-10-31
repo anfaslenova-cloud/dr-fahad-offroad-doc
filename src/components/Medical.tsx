@@ -1,54 +1,40 @@
-import { Stethoscope, Heart, MapPin, Phone } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import medicalImage from "@/assets/medical-practice.jpg";
+import { Stethoscope, MapPin, Heart } from "lucide-react";
 
 const Medical = () => {
   return (
-    <section id="medical" className="py-20 px-4 bg-hero-gradient">
-      <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <Stethoscope className="w-12 h-12 text-primary mx-auto mb-4" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">
-            <span className="bg-racing-gradient bg-clip-text text-transparent">Medical Practice</span>
-          </h2>
-        </div>
+    <section id="medical" className="py-32 px-6 bg-card/30">
+      <div className="max-w-4xl mx-auto space-y-12">
+        <h2 className="text-5xl md:text-6xl font-bold">Medical Practice</h2>
+        
+        <div className="space-y-8">
+          <div className="flex items-start gap-4">
+            <Stethoscope className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Pediatrician</h3>
+              <p className="text-muted-foreground font-light">
+                Specialized care for children's health and development
+              </p>
+            </div>
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-6 items-center mb-8">
-          <Card className="overflow-hidden">
-            <img 
-              src={medicalImage} 
-              alt="Medical Practice" 
-              className="w-full h-64 object-cover"
-            />
-          </Card>
-
-          <div className="space-y-4">
-            <Card className="p-5 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all">
-              <div className="flex items-center gap-3 mb-2">
-                <MapPin className="w-5 h-5 text-primary" />
-                <h3 className="font-bold">Location</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Soothee Sparsh Clinic<br />
+          <div className="flex items-start gap-4">
+            <MapPin className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Soothee Sparsh Clinic</h3>
+              <p className="text-muted-foreground font-light">
                 Kandamangalam, Malappuram, Kerala
               </p>
-            </Card>
+            </div>
+          </div>
 
-            <Card className="p-5 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all">
-              <div className="flex items-center gap-3 mb-2">
-                <Heart className="w-5 h-5 text-primary" />
-                <h3 className="font-bold">Specialty</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Pediatric Care & Child Health
+          <div className="flex items-start gap-4">
+            <Heart className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Community Care</h3>
+              <p className="text-muted-foreground font-light">
+                Committed to serving the local community with dedication
               </p>
-            </Card>
-
-            <Button className="w-full bg-racing-gradient hover:opacity-90">
-              <Phone className="w-4 h-4 mr-2" />
-              Contact Clinic
-            </Button>
+            </div>
           </div>
         </div>
       </div>

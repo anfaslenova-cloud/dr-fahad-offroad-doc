@@ -1,54 +1,50 @@
-import { Trophy, Target, TrendingUp, Calendar, Users } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import { Trophy } from "lucide-react";
 import championshipImage from "@/assets/championship.jpg";
 
 const Racing = () => {
-  const stats = [
-    { label: "Stages", value: "26", icon: Target },
-    { label: "Points", value: "2,165", icon: TrendingUp },
-    { label: "Days", value: "5", icon: Calendar },
-    { label: "Co-Driver", value: "R. Lal", icon: Users }
-  ];
-
   return (
-    <section id="racing" className="py-20 px-4 bg-background">
-      <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <Trophy className="w-12 h-12 text-primary mx-auto mb-4" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">
-            <span className="bg-racing-gradient bg-clip-text text-transparent">Racing Achievements</span>
-          </h2>
+    <section id="racing" className="py-32 px-6">
+      <div className="max-w-4xl mx-auto space-y-12">
+        <h2 className="text-5xl md:text-6xl font-bold">Racing Achievements</h2>
+        
+        <div className="aspect-video rounded-2xl overflow-hidden">
+          <img 
+            src={championshipImage} 
+            alt="Championship Victory" 
+            className="w-full h-full object-cover"
+          />
         </div>
 
-        <div className="mb-12">
-          <Card className="overflow-hidden border-primary/30">
-            <img 
-              src={championshipImage} 
-              alt="Championship Victory" 
-              className="w-full h-72 object-cover"
-            />
-          </Card>
-        </div>
+        <div className="space-y-8">
+          <div className="flex items-start gap-4">
+            <Trophy className="w-6 h-6 text-foreground mt-1 flex-shrink-0" />
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">2024 RFC India Champion</h3>
+              <p className="text-muted-foreground font-light">
+                Overall championship winner with co-driver Rajeev Lal
+              </p>
+            </div>
+          </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          {stats.map((stat, index) => (
-            <Card 
-              key={index} 
-              className="p-4 text-center bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all"
-            >
-              <stat.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-              <div className="text-2xl font-bold text-primary">{stat.value}</div>
-              <div className="text-xs text-muted-foreground">{stat.label}</div>
-            </Card>
-          ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div>
+              <div className="text-3xl font-bold">2,165</div>
+              <div className="text-sm text-muted-foreground font-light">Points</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold">26</div>
+              <div className="text-sm text-muted-foreground font-light">Stages</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold">5</div>
+              <div className="text-sm text-muted-foreground font-light">Days</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold">CJ500</div>
+              <div className="text-sm text-muted-foreground font-light">Colossus</div>
+            </div>
+          </div>
         </div>
-
-        <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/30 text-center">
-          <h3 className="text-xl font-bold mb-2">2024 RFC India Champion</h3>
-          <p className="text-muted-foreground">
-            With co-driver Rajeev Lal in CJ500 "Colossus"
-          </p>
-        </Card>
       </div>
     </section>
   );
