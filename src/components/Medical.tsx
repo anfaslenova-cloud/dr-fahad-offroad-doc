@@ -1,40 +1,53 @@
-import { Stethoscope, MapPin, Heart } from "lucide-react";
+import { Stethoscope, Heart, Users } from "lucide-react";
+import practiceImage from "@/assets/medical-practice.jpg";
 
 const Medical = () => {
   return (
-    <section id="medical" className="py-32 px-6 bg-card/30">
-      <div className="max-w-4xl mx-auto space-y-12">
-        <h2 className="text-5xl md:text-6xl font-bold">Medical Practice</h2>
+    <section id="medical" className="py-32 px-6 bg-card/30 overflow-hidden">
+      <div className="max-w-6xl mx-auto space-y-12">
+        <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:100ms]">
+          <h2 className="text-5xl md:text-6xl font-bold">Medical Practice</h2>
+        </div>
         
-        <div className="space-y-8">
-          <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
-            <Stethoscope className="w-6 h-6 text-foreground mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Pediatrician</h3>
-              <p className="text-muted-foreground font-light">
-                Specialized care for children's health and development
-              </p>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:300ms] flex items-start gap-4 p-6 bg-background/50 rounded-2xl hover:translate-x-4 hover:bg-background/70 transition-all duration-300">
+              <Stethoscope className="w-6 h-6 text-foreground flex-shrink-0 mt-1 transition-transform duration-300 hover:scale-110" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Pediatric Care</h3>
+                <p className="text-muted-foreground font-light leading-relaxed">
+                  Specialized in providing comprehensive healthcare for children, from newborns to adolescents.
+                </p>
+              </div>
+            </div>
+
+            <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:500ms] flex items-start gap-4 p-6 bg-background/50 rounded-2xl hover:translate-x-4 hover:bg-background/70 transition-all duration-300">
+              <Heart className="w-6 h-6 text-foreground flex-shrink-0 mt-1 transition-transform duration-300 hover:scale-110" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Community Focus</h3>
+                <p className="text-muted-foreground font-light leading-relaxed">
+                  Committed to serving the Malappuram community with compassionate and accessible healthcare.
+                </p>
+              </div>
+            </div>
+
+            <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:700ms] flex items-start gap-4 p-6 bg-background/50 rounded-2xl hover:translate-x-4 hover:bg-background/70 transition-all duration-300">
+              <Users className="w-6 h-6 text-foreground flex-shrink-0 mt-1 transition-transform duration-300 hover:scale-110" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Family Partnerships</h3>
+                <p className="text-muted-foreground font-light leading-relaxed">
+                  Building lasting relationships with families, ensuring holistic care for every child.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
-            <MapPin className="w-6 h-6 text-foreground mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Soothee Sparsh Clinic</h3>
-              <p className="text-muted-foreground font-light">
-                Kandamangalam, Malappuram, Kerala
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
-            <Heart className="w-6 h-6 text-foreground mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Community Care</h3>
-              <p className="text-muted-foreground font-light">
-                Committed to serving the local community with dedication
-              </p>
-            </div>
+          <div className="relative opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:900ms]">
+            <img 
+              src={practiceImage} 
+              alt="Soothee Sparsh Clinic" 
+              className="w-full h-[500px] object-cover rounded-3xl transition-transform duration-700 hover:scale-105"
+            />
           </div>
         </div>
       </div>

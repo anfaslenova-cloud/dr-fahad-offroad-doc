@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Medical from "@/components/Medical";
 import Racing from "@/components/Racing";
-import Contact from "@/components/Contact";
+import Achievements from "@/components/Achievements";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
       <About />
       <Medical />
       <Racing />
-      <Contact />
+      <Achievements />
       <Footer />
     </div>
   );

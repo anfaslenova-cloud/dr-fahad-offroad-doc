@@ -28,10 +28,10 @@ const Navigation = () => {
         </div>
 
         <button
-          onClick={() => scrollToSection('contact')}
+          onClick={() => scrollToSection('achievements')}
           className="px-5 py-2 rounded-full border border-border/50 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-300 text-sm font-light hover:scale-105"
         >
-          Contact
+          Achievements
         </button>
       </div>
     </nav>

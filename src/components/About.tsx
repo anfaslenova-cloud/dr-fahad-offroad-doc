@@ -1,21 +1,26 @@
 const About = () => {
   return (
-    <section id="about" className="py-32 px-6">
-      <div className="max-w-4xl mx-auto space-y-12">
-        <h2 className="text-5xl md:text-6xl font-bold opacity-0 animate-[fade-in_0.8s_ease-out_forwards] [animation-delay:100ms]">Dual Excellence</h2>
+    <section id="about" className="py-32 px-6 overflow-hidden">
+      <div className="max-w-6xl mx-auto space-y-16">
+        <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:100ms]">
+          <h2 className="text-5xl md:text-6xl font-bold mb-4">Dual Excellence</h2>
+          <p className="text-muted-foreground font-light text-lg max-w-2xl">
+            Where medical dedication meets motorsport passion
+          </p>
+        </div>
         
-        <div className="grid md:grid-cols-2 gap-16">
-          <div className="space-y-4 opacity-0 animate-[fade-in_0.8s_ease-out_forwards] [animation-delay:300ms] hover:translate-x-2 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold">Medical Practice</h3>
-            <p className="text-muted-foreground font-light leading-relaxed">
+        <div className="space-y-8">
+          <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:300ms] p-8 bg-card/30 rounded-3xl hover:bg-card/50 transition-all duration-300 hover:translate-x-4">
+            <h3 className="text-3xl font-semibold mb-4">Medical Practice</h3>
+            <p className="text-muted-foreground font-light leading-relaxed text-lg">
               Pediatrician at Soothee Sparsh Clinic, Kandamangalam, Kerala. 
-              Dedicated to children's health and community care.
+              Dedicated to children's health and community care with years of expertise in pediatric medicine.
             </p>
           </div>
 
-          <div className="space-y-4 opacity-0 animate-[fade-in_0.8s_ease-out_forwards] [animation-delay:500ms] hover:translate-x-2 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold">Racing Champion</h3>
-            <p className="text-muted-foreground font-light leading-relaxed">
+          <div className="opacity-0 animate-[slide-in-right_0.8s_ease-out_forwards] [animation-delay:500ms] p-8 bg-card/30 rounded-3xl hover:bg-card/50 transition-all duration-300 hover:translate-x-4">
+            <h3 className="text-3xl font-semibold mb-4">Racing Champion</h3>
+            <p className="text-muted-foreground font-light leading-relaxed text-lg">
               2024 RFC India Champion with co-driver Rajeev Lal. 
               2,165 points across 26 special stages in CJ500 "Colossus".
             </p>
