@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.about-card, .medical-item, .racing-item, .stat-card, .token-card');
     animatedElements.forEach(el => observer.observe(el));
     
-    // Add parallax effect to hero image
+    // Add parallax effect to hero image (moves UP as you scroll down)
     const hero = document.querySelector('.hero-image img');
     if (hero) {
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
-            const rate = scrolled * 0.3;
+            const rate = scrolled * -0.2; // Negative for upward movement
             hero.style.transform = `translateY(${rate}px)`;
         });
     }
